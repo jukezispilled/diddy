@@ -62,7 +62,7 @@ export default function App() {
             <Handle size={38} />
             {Object.keys(planets).map((planet) => (
               <MenuListItem key={planet} onClick={() => handlePlanetChange(planet)}>
-                {planet}
+                <span className='text-sm md:text-base font-semibold'>{planet}</span>
               </MenuListItem>
             ))}
           </MenuList>
