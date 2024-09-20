@@ -50,9 +50,14 @@ export default function App() {
   return (
     <ThemeProvider theme={original}>
       <div
-        className="h-screen w-screen flex flex-col justify-center items-center"
+        className="h-screen w-screen flex flex-col justify-center items-center relative"
         style={{ backgroundImage: `url('./${selectedPlanet}')`, backgroundSize: 'cover' }}
       >
+        <div className='absolute bottom-4'>
+          <Window>
+            <div className='text-xs'>CA: XXXXXXXXXX</div>
+          </Window>
+        </div>
         <div className="absolute top-5 left-5">
           <MenuList inline>
             <MenuListItem square disabled>
