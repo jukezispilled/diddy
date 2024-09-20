@@ -55,7 +55,7 @@ export default function App() {
       >
         <div className='absolute bottom-4'>
           <Window>
-            <div className='text-xs'>CA: XXXXXXXXXX</div>
+            <div className='text-xs'>CA: Asx6GgDnwCEFc4ZSy2hBMYHRFVni4aduWm7jYhDypump</div>
           </Window>
         </div>
         <div className="absolute top-5 left-5">
