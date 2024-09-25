@@ -5,29 +5,27 @@ import original from 'react95/dist/themes/original';
 import { Music } from 'lucide-react';
 
 const quotes = [
-  "Yesa! Yeye Binks gonna let you finish, but I'm the GOAT!",
-  "Messa Yeezus! Just dropped the most fire track!",
-  "Wesa in a Yeezy season! You ain’t got the answers, Sway!",
-  "Yeye Binks be trendsetting! Like that mask at Fashion Week!",
-  "Messa the best rapper! My Twitter rants go platinum!",
-  "Wesa gonna drop a hot album! 'I Can’t Be Cancelled!'",
-  "Messa gonna make you dance! Just like at that wedding crash!",
-  "Yesa! Fashion is a lifestyle! Who wears flip-flops with suits?",
-  "Messa gonna give you Kanye confidence! 'I am a God!'",
-  "Wesa gonna change the game! Remember the VMAs?",
+  "I didn’t invite them for a party, we were filming a ‘guys-only’ documentary!",
+  "Bieber just dropped by to compare skincare routines—totally normal!",
+  "Parties? Nah, it was a ‘men’s health’ summit. Just with more glow sticks.",
+  "Weird? Nah, it’s just a creative mastermind gathering… with Bieber on background vocals.",
+  "Bieber was there for research on ‘bro culture,’ obviously!",
+  "That wasn’t a weird party, it was a ‘dude retreat’ with spontaneous choreography.",
+  "Justin Bieber was just there to sing lullabies, totally innocent!",
+  "Look, I didn’t invite Bieber; he just showed up with the weird vibes!"
 ];
 
 const planets = {
-  Naboo: 'n.jpg',
-  Coruscant: 'c.jpg',
-  Tatooine: 't.jpg',
-  Geonosis: 'g.jpg',
+  Party: 'p.webp',
+  LIV: 'l.jpg',
+  Nobu: 'n.webp',
+  Jail: 'j.webp',
 };
 
 export default function App() {
   const [randomQuote, setRandomQuote] = useState(quotes[0]);
-  const [selectedPlanet, setSelectedPlanet] = useState('n.jpg'); // Default to Tatooine (t.jpg)
-  const audioRef = useRef(new Audio('https://ia601203.us.archive.org/34/items/datpiff-mixtape-m9943056/04%20-%20The%20Good%20Life.mp3'));
+  const [selectedPlanet, setSelectedPlanet] = useState('p.webp'); // Default to Tatooine (t.jpg)
+  const audioRef = useRef(new Audio('https://ia600201.us.archive.org/5/items/PuffDaddyIllBeMissingYou_201811/Puff%20Daddy%20-%20I%27ll%20Be%20Missing%20You.mp3'));
   const [isPlaying, setIsPlaying] = useState(false);
 
   const getNewQuote = () => {
@@ -55,7 +53,7 @@ export default function App() {
       >
         <div className='absolute bottom-4'>
           <Window>
-            <div className='text-xs'>CA: Asx6GgDnwCEFc4ZSy2hBMYHRFVni4aduWm7jYhDypump</div>
+            <div className='text-xs'>CA: generating...</div>
           </Window>
         </div>
         <div className="absolute top-5 left-5">
@@ -74,7 +72,7 @@ export default function App() {
 
           <Window className="w-80">
             <WindowHeader className="flex justify-between items-center">
-              <span>YeYe Binks v1.0</span>
+              <span>Super Diddy v1.0</span>
               <Button size="sm" square>
                 <span className="text-lg">×</span>
               </Button>
@@ -87,10 +85,10 @@ export default function App() {
                 </Button>
               </Toolbar>
               <div className="flex items-center z-[50] pr-2 py-1 space-x-2">
-                <a href="https://x.com/yeyebinks" className="transition ease-in-out duration-150 underline">
+                <a href="https://x.com/" className="transition ease-in-out duration-150 underline">
                   Twitter
                 </a>
-                <a href="https://t.me/yeyebinks" className="transition ease-in-out duration-150 underline">
+                <a href="https://t.me/" className="transition ease-in-out duration-150 underline">
                   TG
                 </a>
               </div>
@@ -98,14 +96,14 @@ export default function App() {
             <WindowContent>
               <Panel variant="well" className="mb-4">
                 <img
-                  src="yeye.png"
-                  alt="Yeye Binks"
+                  src="diddy.jpeg"
+                  alt="Super Diddy"
                   className="w-full h-full object-cover"
                 />
               </Panel>
               <div className="mb-4">{randomQuote}</div>
               <Button onClick={getNewQuote} fullWidth>
-                Generate Yeye Wisdom
+                Generate Innocence
               </Button>
             </WindowContent>
           </Window>
