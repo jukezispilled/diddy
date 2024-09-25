@@ -85,10 +85,10 @@ export default function App() {
                 </Button>
               </Toolbar>
               <div className="flex items-center z-[50] pr-2 py-1 space-x-2">
-                <a href="https://x.com/" className="transition ease-in-out duration-150 underline">
+                <a href="https://x.com/superdiddysol" className="transition ease-in-out duration-150 underline">
                   Twitter
                 </a>
-                <a href="https://t.me/" className="transition ease-in-out duration-150 underline">
+                <a href="https://t.me/superdiddycoin" className="transition ease-in-out duration-150 underline">
                   TG
                 </a>
               </div>
