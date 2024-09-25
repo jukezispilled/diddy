@@ -53,7 +53,7 @@ export default function App() {
       >
         <div className='absolute bottom-4'>
           <Window>
-            <div className='text-xs'>CA: generating...</div>
+            <div className='text-xs'>CA: 4CBzSsbt1tyUWmwbPwFHGijDbb68WxBgyPE7EpvJpump</div>
           </Window>
         </div>
         <div className="absolute top-5 left-5">
